@@ -6,18 +6,21 @@
 /*   By: mnouchet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 18:55:45 by mnouchet          #+#    #+#             */
-/*   Updated: 2022/09/19 20:52:37 by mnouchet         ###   ########.fr       */
+/*   Updated: 2022/09/19 21:00:39 by mnouchet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_numeric(char *str);
+#include <stdio.h>
+
+int	ft_str_is_printable(char *str);
 
 int	main(void)
 {
 	char	str[] = "42 c'est la vie vraiment";
-
-	printf("Sentence: %s", str);
-	printf("IsPrintable: %d", ft_str_is_numeric(str));
-	printf("Sentence: %s", str);
-	printf("IsPrintable: %d", ft_str_is_numeric(str));
+	char	str2[] = "42 c'est424frojr^R#93 la vie vraiment";
+	
+	printf("Sentence: %s\n", str);
+	printf("IsPrintable: %d\n", ft_str_is_printable(str));
+	printf("Sentence: %s\n", str2);
+	printf("IsPrintable: %d\n", ft_str_is_printable(str2));
 }
