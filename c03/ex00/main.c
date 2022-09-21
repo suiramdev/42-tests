@@ -5,22 +5,30 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnouchet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/19 18:08:20 by mnouchet          #+#    #+#             */
-/*   Updated: 2022/09/20 19:32:45 by mnouchet         ###   ########.fr       */
+/*   Created: 2022/09/20 12:00:26 by mnouchet          #+#    #+#             */
+/*   Updated: 2022/09/20 12:30:23 by mnouchet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <string.h>
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
+int	ft_strcmp(char *s1, char *s2);
 
-int	main(void)
+int	main(int argc, char *argv[])
 {
-	char	src[] = "This sentence should be copied";
-	char	dest[] = "";
+	char *s1 = "Hello World!";
+	char *s2 = "HellO Worldeuh !";
 
-	printf("Sentence: %s\n", src);
-	printf("length = %d\n", ft_strlcpy(dest, src, 10));
-	printf("Copied: %s\n", dest);
-	printf("n = %d", 10);
+	if (argc >= 3)
+	{
+		printf("ft_strcmp > %d\n", ft_strcmp(argv[1], argv[2]));
+		printf("strcmp > %d\n", strcmp(argv[1], argv[2]));
+	}
+	else
+	{
+		printf("s1: %s\ns2: %s\n", s1, s2);
+		printf("ft_strcmp > %d\n", ft_strcmp(s1, s2));
+		printf("strcmp > %d\n", strcmp(s1, s2));
+	}
 }

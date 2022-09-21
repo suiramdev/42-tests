@@ -5,22 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnouchet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/19 18:08:20 by mnouchet          #+#    #+#             */
-/*   Updated: 2022/09/20 19:32:45 by mnouchet         ###   ########.fr       */
+/*   Created: 2022/09/20 12:00:26 by mnouchet          #+#    #+#             */
+/*   Updated: 2022/09/20 14:09:58 by mnouchet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <string.h>
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
+int	ft_strncmp(char *s1, char *s2, unsigned int n);
 
 int	main(void)
 {
-	char	src[] = "This sentence should be copied";
-	char	dest[] = "";
+	char *s1 = "Hello World!";
+	char *s2 = "Hell0 Worldeuh !";
 
-	printf("Sentence: %s\n", src);
-	printf("length = %d\n", ft_strlcpy(dest, src, 10));
-	printf("Copied: %s\n", dest);
-	printf("n = %d", 10);
+	printf("s1: %s\ns2: %s\n", s1, s2);
+	printf("ft_strncmp > %d\n", ft_strncmp(s1, s2, 5));
+	printf("strncmp > %d\n", strncmp(s1, s2, 5));
 }
