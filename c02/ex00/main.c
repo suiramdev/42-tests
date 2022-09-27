@@ -6,7 +6,7 @@
 /*   By: mnouchet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 18:08:20 by mnouchet          #+#    #+#             */
-/*   Updated: 2022/09/21 21:27:24 by mnouchet         ###   ########.fr       */
+/*   Updated: 2022/09/22 12:16:20 by mnouchet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ char	*ft_strcpy(char *dest, char *src);
 int	main(void)
 {
 	char	src[] = "This sentence should be copied";
-	char	dest[7];
-	char	destR[7];
+	char	dest[40];
+	char	destR[40];
 
 	printf("Original: %s\n", src);	
 	printf("Copied ft: %s\n", ft_strcpy(dest, src));

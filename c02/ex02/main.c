@@ -6,7 +6,7 @@
 /*   By: mnouchet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 18:17:00 by mnouchet          #+#    #+#             */
-/*   Updated: 2022/09/19 20:44:07 by mnouchet         ###   ########.fr       */
+/*   Updated: 2022/09/22 12:21:36 by mnouchet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_str_is_alpha(char *str);
 
 int	main(void)
 {
-	char	str[] = "cest la reponse a la vie";
+	char	str[] = "vie";
 	char	str2[] = "rejgrhg42828*#^#^*&dddd";
 	
 	printf("Sentence: %s\n", str);

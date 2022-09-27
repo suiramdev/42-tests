@@ -6,7 +6,7 @@
 /*   By: mnouchet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 18:53:26 by mnouchet          #+#    #+#             */
-/*   Updated: 2022/09/20 18:56:44 by mnouchet         ###   ########.fr       */
+/*   Updated: 2022/09/26 11:19:36 by mnouchet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,13 @@
 
 char	*ft_strstr(char *str, char *to_find);
 
-int	main(void)
+int	main(void) 
 {
-	char	str[] = "Hello World, how are you doing ?";
-	char	pattern[] = "World";
+	char	str[] = "HelloWWWWorld, how are you doing ?";
+	char	pattern[] = "";
+	char	pattern2[] = "g ?tt";
 
 	printf("%s\n", ft_strstr(str, pattern));
+	printf("%s\n", ft_strstr("", ""));
+	printf("%s\n", ft_strstr("", pattern2));
 }

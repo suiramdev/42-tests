@@ -6,7 +6,7 @@
 /*   By: mnouchet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 18:55:45 by mnouchet          #+#    #+#             */
-/*   Updated: 2022/09/19 20:50:06 by mnouchet         ###   ########.fr       */
+/*   Updated: 2022/09/22 12:36:39 by mnouchet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ int	ft_str_is_lowercase(char *str);
 
 int	main(void)
 {
-	char	str[] = "la vie vraiment";
-	char	str2[] = "OH MY GOD";
+	char	str[] = "laaa";
+	char	str2[] = "OH";
 
 	printf("Sentence: %s\n", str);
 	printf("IsLower: %d\n", ft_str_is_lowercase(str));
