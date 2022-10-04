@@ -5,17 +5,31 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnouchet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/26 13:32:22 by mnouchet          #+#    #+#             */
-/*   Updated: 2022/10/01 17:32:41 by mnouchet         ###   ########.fr       */
+/*   Created: 2022/09/29 12:03:26 by mnouchet          #+#    #+#             */
+/*   Updated: 2022/10/04 17:26:44 by mnouchet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_atoi_base(char *str, char *base);
+char	**ft_split(char *str, char *charset);
 
 int	main(int argc, char **argv)
 {
+	char	**split;
+	int		i;
+
 	(void)argc;
-	printf("%d\n", ft_atoi_base(argv[1], argv[2]));
+	(void)argv;
+	char str[] = "test,stuffgoes,here";
+	split = ft_split(str, "");
+	if (!split)
+		return (0);
+	i = 0;
+	while (split[i])
+	{
+		printf("%d:\n", i);
+		printf("%s\n", split[i]);
+		i++;
+	}
 }

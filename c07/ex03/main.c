@@ -5,17 +5,19 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnouchet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/26 13:32:22 by mnouchet          #+#    #+#             */
-/*   Updated: 2022/10/01 17:32:41 by mnouchet         ###   ########.fr       */
+/*   Created: 2022/09/28 18:54:58 by mnouchet          #+#    #+#             */
+/*   Updated: 2022/10/04 23:02:53 by mnouchet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <stdlib.h>
 
-int	ft_atoi_base(char *str, char *base);
+char	*ft_strjoin(int size, char **strs, char *sep);
 
 int	main(int argc, char **argv)
 {
 	(void)argc;
-	printf("%d\n", ft_atoi_base(argv[1], argv[2]));
+	(void)argv;
+	printf("%s\n", ft_strjoin(argc, argv, "-"));
 }

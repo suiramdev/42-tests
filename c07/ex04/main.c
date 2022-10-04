@@ -5,17 +5,17 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnouchet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/26 13:32:22 by mnouchet          #+#    #+#             */
-/*   Updated: 2022/10/01 17:32:41 by mnouchet         ###   ########.fr       */
+/*   Created: 2022/10/01 14:06:21 by mnouchet          #+#    #+#             */
+/*   Updated: 2022/10/02 16:14:19 by mnouchet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_atoi_base(char *str, char *base);
+char	*ft_convert_base(char *nbr, char *base_from, char *base_to);
 
 int	main(int argc, char **argv)
 {
 	(void)argc;
-	printf("%d\n", ft_atoi_base(argv[1], argv[2]));
+	printf("%s\n", ft_convert_base(argv[1], argv[2], argv[3]));
 }

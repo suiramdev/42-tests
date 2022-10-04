@@ -5,17 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnouchet <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/26 13:32:22 by mnouchet          #+#    #+#             */
-/*   Updated: 2022/10/01 17:32:41 by mnouchet         ###   ########.fr       */
+/*   Created: 2022/10/03 00:05:22 by mnouchet          #+#    #+#             */
+/*   Updated: 2022/10/03 00:18:50 by mnouchet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "ft_stock_str.h"
 
-int	ft_atoi_base(char *str, char *base);
+struct s_stock_str	*ft_strs_to_tab(int ac, char **av);
+void				ft_show_tab(struct s_stock_str *par);
 
 int	main(int argc, char **argv)
 {
-	(void)argc;
-	printf("%d\n", ft_atoi_base(argv[1], argv[2]));
+	struct s_stock_str	*tab = ft_strs_to_tab(argc, argv);
+	ft_show_tab(tab);
 }
